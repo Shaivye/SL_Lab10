@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator</title>
+    <style>
+
+.fg {
+    max-width: 800px;
+    margin: auto;
+    background: #df4747;
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+}
+
+.calc {
+    background-color: #E3E2DE;
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.calc-disp {
+    overflow-x: hidden;
+    padding: 5px 5px 5px 5px;
+    border:1px solid #727272;
+    border-radius: 2px;
+    min-height: 40px;
+    max-width: 100%;
+    background: #FFFEF3;
+    margin: 2px 2px 20px 2px;
+}
+
+.button {
+    
+    border-radius: 50%;
+    font-size: 30px;
+    width: 80px;
+    height: 70px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+    color: white;
+    background-color: blue;
+    border: none;
+    
+}
+
+.button:hover {
+    background-color: black;
+}
+
+.button:active {
+    background-color: #B9001D;
+}
+
+.res {
+    min-width: 30px;
+    font-size: 30px;
+    min-height: 30px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+    color: white;
+    background-color:blue;
+    border: 2px solid black;
+    width: 100%;
+    box-sizing: border-box;
+}
+</style>
+</head>
+<body style="width: 100%; height: 100%;">
+<div class="fg">
+    
+        <div class="container-fluid" style="text-align: center; padding-top: 3%; height: 100px;">
+
+            <div style="background-color: thistle; height: 65px;">
+            <p style="font-family: Jokerman; font-size: 45px;">CALCULATOR</p>
+
+            <br>
+            <br>
+            </div>
+        </div>
+<div style="background-color: yellowgreen;">
+<p style="font-family: Arial, Helvetica, sans-serif; font-size: 30px;text-align: center;">Enter two number and then select the operator.</p>
+</div>
+
+
+<br />
+<form target="" method="post"> 
+<table class="calc" align="center">
+    <tr align="center">
+        <td colspan="4"><div class="res">{{RESULT}}</div></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="text" name="val1" value="{{VALUE1}}" class="calc-disp"></input></td>
+        <td colspan="2"><input type="text" name="val2" value="{{VALUE2}}" class="calc-disp"></input></td>
+    </tr>
+    <tr class="pad">
+        <td><input type="submit" name="oper" value="+" class="button" /></td>
+        <td><input type="submit" name="oper" value="-" class="button" /></td>
+        <td><input type="submit" name="oper" value="*" class="button" /></td>
+        <td><input type="submit" name="oper" value="/" class="button" /></td>
+    </tr>
+</table>
+</form>
+
+</body>
+</html>
